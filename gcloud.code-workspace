@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../main-instance-159147526315/chrome-os"
+		},
+		{
+			"path": "../main-instance-159147526315/.git"
+		},
+		{
+			"path": "../main-instance-159147526315/hooks"
+		},
+		{
+			"path": "../main-instance-159147526315/info"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "chrome-os"
+	}
+}
