@@ -1,0 +1,7 @@
+/* index placeholder referencing codicon.css */
+@import "codicon.css";
+
+/*
+  codicon.css was not found in the current workspace search.
+  Replace this import with the actual path or file contents once available.
+*/
