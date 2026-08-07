@@ -1,15 +1,26 @@
-Welcome to Google Cloud Shell, a tool for managing resources hosted on Google Cloud Platform!
-The machine comes pre-installed with the Google Cloud SDK and other popular developer tools.
+# gcloud & hello-world-1 Package Components
 
-Your 5GB home directory will persist across sessions, but the VM is ephemeral and will be reset
-approximately 20 minutes after your session ends. No system-wide change will persist beyond that.
+Welcome to the **gcloud** and **hello-world-1** multi-component repository.
 
-Type "gcloud help" to get help on using Cloud SDK. For more examples, visit
-https://cloud.google.com/shell/docs/quickstart and https://cloud.google.com/shell/docs/examples
+## Components Included:
+- **Ruby Gem Package (`gcloud_gem`)**: Located under `gcloud_gem.gemspec` & `lib/`
+- **Node.js Express Server**: `server.js` with server ready startup logs
+- **Cloud Run Hello World Service**: Flask application (`app.py`), `Dockerfile`, and `Procfile`
 
-Type "cloudshell help" to get help on using the "cloudshell" utility.  Common functionality is
-aliased to short commands in your shell, for example, you can type "dl <filename>" at Bash prompt to
-download a file. Type "cloudshell aliases" to see these commands.
+## Getting Started
 
-Type "help" to see this message any time. Type "builtin help" to see Bash interpreter help.
+### 1. Ruby Gem Package
+```bash
+gem build gcloud_gem.gemspec
+```
 
+### 2. Node.js Express Server
+```bash
+node server.js
+```
+
+### 3. Python / Flask App
+```bash
+pip install -r requirements.txt
+python app.py
+```
