@@ -1,0 +1,38 @@
+name: Publish Ruby Gem to GitHub Packages
+
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    name: Build & Publish Gem
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Build Gem
+        run: gem build gcloud_gem.gemspec
+
+      - name: Publish to GitHub Packages
+        env:
+          GEM_HOST_API_KEY: "Bearer ${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          mkdir -p ~/.gem
+          touch ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
+          echo ":github: https://rubygems.pkg.github.com/${{ github.repository_owner }}" >> ~/.gem/credentials
+          echo ":github_key: Bearer ${{ secrets.GITHUB_TOKEN }}" >> ~/.gem/credentials
+          gem push --KEY github --host https://rubygems.pkg.github.com/${{ github.repository_owner }} *.gem
