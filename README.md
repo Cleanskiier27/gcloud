@@ -2,6 +2,10 @@
 
 Welcome to the **gcloud** and **hello-world-1** multi-component repository.
 
+![InfinityWallet repository preview](static/infinitywallet-preview.png)
+
+Image source: [Nguyendinhtuan17/infinitywallet](https://github.com/Nguyendinhtuan17/infinitywallet).
+
 ## Components Included:
 - **Ruby Gem Package (`gcloud_gem`)**: Located under `gcloud_gem.gemspec` & `lib/`
 - **Node.js Express Server**: `server.js` with server ready startup logs
