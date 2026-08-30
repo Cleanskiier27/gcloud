@@ -1,73 +1,40 @@
 <!doctype html>
-<html lang=en>
+<html lang="en">
 <head>
 <meta charset=utf-8>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Congratulations | Cloud Run</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="preload" as="font">
-<link href="/static/cloud-run-32-color.png" rel="icon" type="image/png" />
+<meta name="theme-color" content="#081019">
+<title>Interstellar Wealth Megastructure</title>
 <link href="/static/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<div class="container">
-		<div class="hero">
-			<div style="text-align:center;">
-				<picture>
-					<source srcset="/static/celebration-dark.svg" media="(prefers-color-scheme: dark)">
-					<img src="/static/celebration.svg" alt="A group celebrating" width="427" height="231">
-				</picture>
-			</div>
+	<div class="app-shell">
+		<aside class="sidebar">
+			<div class="brand"><span class="brand-mark">O</span><span>ORBITAL<br><b>COMMONS</b></span></div>
+			<nav aria-label="Primary navigation">
+				<a class="nav-item active" href="#overview"><span>+</span>Overview</a>
+				<a class="nav-item" href="#assets"><span>◇</span>Assets</a>
+				<a class="nav-item" href="#markets"><span>↗</span>Markets</a>
+				<a class="nav-item" href="#governance"><span>□</span>Governance</a>
+			</nav>
+			<div class="sidebar-foot"><span class="status-dot"></span><span>Network nominal</span><small>SECTOR 07 / L5</small></div>
+		</aside>
 
-			<div class="message">
-				<h1>{{message}}</h1>
-				<h2>Congratulations, you successfully deployed a container image to Cloud Run</h2>
-			</div>
-		</div>
+		<main class="main-content" id="overview">
+			<header class="topbar"><div><span class="eyebrow">COMMAND CENTER / 28 AUG 2186</span><h1>Interstellar wealth<br><em>infrastructure.</em></h1></div><div class="top-actions"><span class="sync"><span class="status-dot"></span>Synced 04:32 UTC</span><button class="icon-button" aria-label="Open alerts">!</button><div class="avatar">AC</div></div></header>
 
-		<div class="details">
-			<p>
-                This created the revision <code>{{Revision}}</code> of the Cloud Run service <code>{{Service}}</code>.
-            </p>
+			<section class="hero-grid">
+				<div class="value-panel panel"><div class="panel-label">TOTAL NETWORK VALUE <span>EUR</span></div><div class="big-number">€42.8<span>T</span></div><div class="delta">↗ 8.4% <small>vs previous cycle</small></div><div class="orbit-visual"><div class="planet"></div><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="orbit-label label-one">LUNA<span>€8.2T</span></div><div class="orbit-label label-two">HELIOS<span>€14.6T</span></div><div class="orbit-label label-three">KLEIN<span>€3.9T</span></div></div></div>
+				<div class="allocation-panel panel"><div class="panel-label">CAPITAL ALLOCATION <span>LIVE</span></div><div class="allocation-row"><span><i class="swatch cyan"></i>Energy lattice</span><b>38.2%</b></div><div class="allocation-row"><span><i class="swatch lime"></i>Habitat systems</span><b>27.6%</b></div><div class="allocation-row"><span><i class="swatch orange"></i>Transit corridors</span><b>19.8%</b></div><div class="allocation-row"><span><i class="swatch pink"></i>Reserve liquidity</span><b>14.4%</b></div><div class="allocation-bar"><i></i><i></i><i></i><i></i></div><button class="text-button">View allocation map <span>↗</span></button></div>
+			</section>
 
-			<p class="callout">
-				You can deploy any container to Cloud Run that listens for HTTP requests on the port defined by the
-				<code>PORT</code> environment variable.
-				Cloud Run will scale automatically based on requests and you never have to worry about
-				infrastructure.
-			</p>
+			<section class="section-heading" id="assets"><div><span class="eyebrow">SYSTEM LEDGER</span><h2>Megastructure performance</h2></div><button class="filter-button">Last 30 cycles <span>⌄</span></button></section>
+			<section class="metrics-grid"><article class="metric panel"><span class="metric-icon cyan-text">◒</span><span class="panel-label">ENERGY OUTPUT</span><strong>18.4 <small>PW</small></strong><span class="positive">+12.8%</span><div class="sparkline cyan-line"></div></article><article class="metric panel"><span class="metric-icon lime-text">◉</span><span class="panel-label">HABITATS ONLINE</span><strong>2,184 <small>nodes</small></strong><span class="positive">+34</span><div class="sparkline lime-line"></div></article><article class="metric panel"><span class="metric-icon orange-text">↗</span><span class="panel-label">TRADE VELOCITY</span><strong>€9.2 <small>bn / hr</small></strong><span class="positive">+6.2%</span><div class="sparkline orange-line"></div></article></section>
 
-			<h3>What's next?</h3>
-			<ul>
-				<li class="next">Try out live debugging in Cloud Code for <a href="https://cloud.google.com/code/docs/vscode/debugging-a-cloud-run-service" target="_blank" rel="noopener">VS Code</a> or <a href="https://cloud.google.com/code/docs/intellij/debugger" target="_blank" rel="noopener">IntelliJ</a></li>
-				<li class="next">Make your application more secure with Secret Manager for <a href="https://cloud.google.com/code/docs/vscode/secret-manager" target="_blank" rel="noopener">VS Code</a> or <a href="https://cloud.google.com/code/docs/intellij/secret-manager" target="_blank" rel="noopener">IntelliJ</a></li>
-				<li class="next">Explore the features of Cloud Run with <a href="https://cloud.google.com/run/docs/tutorials" target="_blank" rel="noopener">Cloud Run tutorials</a> </li>
-			</ul>
-			
-			<h3>Want to help shape the future of Cloud Code?</h3>
-			<ul>
-				<li class="next">
-				Sign up for the chance to participate in our ongoing research studies 
-					<a href="https://google.qualtrics.com/jfe/form/SV_4Me7SiMewdvVYhL?reserved=1&utm_source=In-product&Q_Language=en&utm_medium=own_prd&utm_campaign=Q1&productTag=clou&campaignDate=January2021&referral_code=UXlX318928" target="_blank" rel="noopener">
-						here!
-					</a>
-				</li>
-				<li class="next">Join the <b>#cloud-code</b> channel in the <a href="https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg" target="_blank" rel="noopener">Google Cloud Platform Slack community</a> to ask questions, provide feedback, and get the latest Cloud Code news</li>
-			</ul>
-
-			<h3>Learn more with our documentation</h3>
-			<p class="cta">
-				<a href="https://cloud.google.com/code/docs" target="_blank" rel="noopener">
-					CLOUD CODE DOCS
-				</a>
-				<a href="https://cloud.google.com/run/docs" target="_blank" rel="noopener">
-					CLOUD RUN
-				</a>
-				<a href="https://cloud.google.com/shell/docs/editor-overview#cloud_code_integration" target="_blank" rel="noopener">
-					CLOUD CODE ON CLOUD SHELL
-				</a>
-			</p>
-		</div>
+			<section class="bottom-grid"><div class="activity panel" id="markets"><div class="panel-label">NETWORK ACTIVITY <span>LAST 06 HRS</span></div><div class="chart"><div class="chart-lines"></div><div class="chart-bars"><i style="height:35%"></i><i style="height:52%"></i><i style="height:43%"></i><i style="height:68%"></i><i style="height:48%"></i><i style="height:79%"></i><i style="height:61%"></i><i style="height:87%"></i><i style="height:73%"></i><i style="height:94%"></i><i style="height:82%"></i><i style="height:100%"></i></div></div><div class="chart-axis"><span>00:00</span><span>02:00</span><span>04:00</span><span>06:00</span></div></div><div class="alerts panel" id="governance"><div class="panel-label">ACTIVE SIGNALS <span>3 OPEN</span></div><div class="alert-row"><i class="signal orange"></i><div><b>Transit corridor congestion</b><small>Vesta-Luna / 12 min ago</small></div><span>›</span></div><div class="alert-row"><i class="signal cyan"></i><div><b>Helios yield above forecast</b><small>Energy lattice / 38 min ago</small></div><span>›</span></div><div class="alert-row"><i class="signal lime"></i><div><b>New habitat charter filed</b><small>Klein ring / 1 hr ago</small></div><span>›</span></div><button class="text-button">Open signal console <span>↗</span></button></div></section>
+			<footer><span>ORBITAL COMMONS / PRIVATE NETWORK</span><span>SERVICE <code>{{Service}}</code> · REVISION <code>{{Revision}}</code></span></footer>
+		</main>
 	</div>
 </body>
 </html>
